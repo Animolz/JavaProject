@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache
+Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="baseLayout" template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+        <put-attribute name="content" value="" />
+    </definition>
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Carity" />
+        <put-attribute name="content" value="/WEB-INF/pages/user/index.jsp" />
+    </definition>
+    <definition name="profile" extends="baseLayout">
+        <put-attribute name="title" value="Profile || Carity" />
+        <put-attribute name="content" value="/WEB-INF/pages/user/profile.jsp" />
+    </definition>
+    <definition name="admin-user" extends="baseLayout">
+        <put-attribute name="title" value="User || Admin" />
+        <put-attribute name="content" value="/WEB-INF/pages/admin/user/admin-user.jsp" />
+    </definition>
+    <definition name="admin-user-input" extends="baseLayout">
+        <put-attribute name="title" value="User || Admin" />
+        <put-attribute name="content" value="/WEB-INF/pages/admin/user/admin-user-input.jsp" />
+    </definition>
+    <definition name="admin-user-input1" extends="baseLayout">
+        <put-attribute name="title" value="User || Admin" />
+        <put-attribute name="content" value="/WEB-INF/pages/admin/user/admin-user-input1.jsp" />
+    </definition>
+    <definition name="admin-tag" extends="baseLayout">
+        <put-attribute name="title" value="Tag || Admin" />
+        <put-attribute name="content" value="/WEB-INF/pages/admin/tag/admin-tag.jsp" />
+    </definition>
+    <definition name="admin-tag-input" extends="baseLayout">
+        <put-attribute name="title" value="Tag || Admin" />
+        <put-attribute name="content" value="/WEB-INF/pages/admin/tag/admin-tag-input.jsp" />
+    </definition>
+    <definition name="admin-tag-input1" extends="baseLayout">
+        <put-attribute name="title" value="Tag || Admin" />
+        <put-attribute name="content" value="/WEB-INF/pages/admin/tag/admin-tag-input1.jsp" />
+    </definition>
+    <definition name="admin-post" extends="baseLayout">
+        <put-attribute name="title" value="Post || Admin" />
+        <put-attribute name="content" value="/WEB-INF/pages/admin/post/admin-post.jsp" />
+    </definition>
+    <definition name="upload-post" extends="baseLayout">
+        <put-attribute name="title" value="UpPost || Home" />
+        <put-attribute name="content" value="/WEB-INF/pages/user/upload-post.jsp" />
+    </definition>
+    <definition name="upload-post-auction" extends="baseLayout">
+        <put-attribute name="title" value="UpAuction || Home" />
+        <put-attribute name="content" value="/WEB-INF/pages/user/upload-post-auction.jsp" />
+    </definition>
+    <definition name="post-summary" extends="baseLayout">
+        <put-attribute name="title" value="Post Summary || Admin" />
+        <put-attribute name="content" value="/WEB-INF/pages/admin/stats/post-summary.jsp" />
+    </definition>
+    <definition name="like-summary" extends="baseLayout">
+        <put-attribute name="title" value="Like Summary || Admin" />
+        <put-attribute name="content" value="/WEB-INF/pages/admin/stats/like-summary.jsp" />
+    </definition>
+    <definition name="post-summary-by-time" extends="baseLayout">
+        <put-attribute name="title" value="Like Summary || Admin" />
+        <put-attribute name="content" value="/WEB-INF/pages/admin/stats/post-summary-by-time.jsp" />
+    </definition>
+</tiles-definitions>
